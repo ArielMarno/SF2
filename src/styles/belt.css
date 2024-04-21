@@ -1,0 +1,45 @@
+.belt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: rgb(254, 251, 65, 0.8);
+    min-height: 5svh;
+}
+
+.belt main{
+    animation: belt 35s linear infinite;
+    display: inline-block;
+    padding-left: 100%;
+}
+
+.belt p {
+    font-family: var(--font-text);
+    color: var(--color-black);
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+@keyframes belt {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+
+@media only screen and (max-width:767px){
+
+.belt main{
+    animation: belt 45s linear infinite;
+}
+
+.belt p {
+    font-size: 1.1rem;
+}
+}
