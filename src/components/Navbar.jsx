@@ -21,7 +21,7 @@ const Navbar = () => {
   useEffect(() => {
       const changeNavbarColor = () => {
           if(window.scrollY) {
-              setNavbarColor('rgba(0, 0, 0, 0.5)');
+              setNavbarColor('rgb(1, 1, 2, 0.9)');
           } else {
               setNavbarColor('transparent');
           }

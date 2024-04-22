@@ -1,0 +1,149 @@
+/*main container*/
+.home__container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    min-height: 100svh;
+}
+
+/*background video*/
+video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home__video_mb{
+    display: none;
+}
+
+/*contenido  principal del componente*/
+
+.home__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 8vw;
+}
+
+/*titulo*/
+.home__content h1{
+    font-size: clamp(4.8rem, 4.1592rem + 1.0031vw, 5.2rem);
+    font-family: var(--font-title);
+    font-weight: 600;
+    max-width: 780px;
+    line-height: 80px;
+    margin-bottom: 1.5rem;
+}
+
+.home__content h1 span{
+    font-weight: 700;
+    color: var(--color-yellow);
+}
+
+/*parrafos*/
+
+.home__content p{
+    font-size: 1.5rem;
+    font-family: var(--font-text);
+    max-width: 750px;
+    margin-bottom: 1rem;
+}
+
+
+.home__content button{
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-black);
+    background: var(--color-yellow);
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0 var(--color-orange);
+    border: none;
+    margin-top: 1rem;
+}
+
+.home__content button:hover {
+    color: var(--color-white);
+    box-shadow: inset 0 -100px 0 0 var(--color-orange);
+}
+  
+
+.home__content button:active {
+    transform: scale(0.9);
+}
+
+
+/*codigo adaptable para dispositivos mobiles*/
+@media only screen and (max-width:1022px){
+    .home__content{
+        padding: 0 6vw;
+    }
+
+    .home__content h1{
+        font-size: clamp(4.4rem, 3.1969rem + 2.5098vw, 4.8rem);
+    }
+
+    .home__content p{
+        font-size: 1.4rem;
+        max-width: 600px;
+    }
+
+    .home__content button{
+        font-size: 1.7rem;
+    }
+}
+
+
+@media only screen and (max-width:767px){
+    .home__content{
+        padding: 0 3vw;
+    }
+
+    .home__video_destock{
+        display: none;
+    }
+
+    .home__video_mb{
+        display: flex;
+    }
+
+    .home__content h1{
+        font-size: clamp(2.7rem, 0.024rem + 8.9199vw, 4.3rem);
+        line-height: 65px;
+    }
+
+    .home__content p{
+        font-size: 1.3rem;
+        max-width: 550px;
+        text-align: justify;
+    }
+
+    .home__content button{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width:480px){
+    .home__content h1{
+        font-size: 2.6rem;
+        line-height: 50px;
+        max-width: 380px;
+    }
+    .home__content p{
+        font-size: 1.2rem;
+        max-width: 400px;
+    }
+
+    .home__content button{
+        font-size: 1.4rem;
+    }
+}

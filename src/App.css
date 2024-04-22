@@ -7,10 +7,10 @@
   --font-text: "Montserrat", sans-serif;
 
   /*COLORES*/
-  --color-black: #1E1E1E; 
+  --color-black: #010102; 
   --color-white : #F5F8FF;
   --color-grey: #6E6E70;
-  --color-green: #4CAF50;
+  --color-orange: #ff5e00;
   --color-yellow: #FED400;
 }
 
@@ -23,13 +23,3 @@
   text-decoration: none;
 }
 
-body{
-  background: var(--color-black);
-  margin: 0 8vw;
-}
-
-@media only screen and (max-width:1022px){
-  body{
-    margin: 0 5vw;
-  }
-}
