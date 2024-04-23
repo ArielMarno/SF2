@@ -23,3 +23,7 @@
   text-decoration: none;
 }
 
+body{
+  background: var(--color-black);
+}
+

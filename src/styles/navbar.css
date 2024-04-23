@@ -95,7 +95,7 @@
 }
 
 /*codigo adaptable para dispositivos mobiles*/
-@media only screen and (max-width:1022px){
+@media only screen and (max-width:1023px){
 
     /*separación con los margenes derecho e izquierdo*/
     .navbar__main{
@@ -124,7 +124,7 @@
 }
 
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:768px){
     
     /*separación con los margenes derecho e izquierdo*/
     .navbar__main{

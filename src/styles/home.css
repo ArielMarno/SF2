@@ -39,6 +39,7 @@ video{
     max-width: 780px;
     line-height: 80px;
     margin-bottom: 1.5rem;
+    margin-top: 5rem;
 }
 
 .home__content h1 span{
@@ -68,6 +69,7 @@ video{
     box-shadow: inset 0 0 0 0 var(--color-orange);
     border: none;
     margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .home__content button:hover {
@@ -82,7 +84,7 @@ video{
 
 
 /*codigo adaptable para dispositivos mobiles*/
-@media only screen and (max-width:1022px){
+@media only screen and (max-width:1023px){
     .home__content{
         padding: 0 6vw;
     }
@@ -102,7 +104,7 @@ video{
 }
 
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:768px){
     .home__content{
         padding: 0 3vw;
     }
@@ -118,12 +120,14 @@ video{
     .home__content h1{
         font-size: clamp(2.7rem, 0.024rem + 8.9199vw, 4.3rem);
         line-height: 65px;
+        margin-bottom: 0.5rem;
     }
 
     .home__content p{
-        font-size: 1.3rem;
-        max-width: 550px;
-        text-align: justify;
+        font-size: 1.2rem;
+        max-width: 500px;
+        text-align: left;
+        margin-bottom: 0.5rem;
     }
 
     .home__content button{
@@ -134,16 +138,15 @@ video{
 
 @media only screen and (max-width:480px){
     .home__content h1{
-        font-size: 2.6rem;
-        line-height: 50px;
-        max-width: 380px;
+        font-size: 2.2rem;
+        line-height: 40px;
     }
     .home__content p{
-        font-size: 1.2rem;
-        max-width: 400px;
+        font-size: 0.9rem;
+        font-weight: 500;
     }
 
     .home__content button{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }

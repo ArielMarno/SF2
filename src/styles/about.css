@@ -1,0 +1,111 @@
+/*contenedor principal*/
+.about__main{
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--color-black);
+    gap: 3rem;
+    padding: 0 8vw; 
+}
+
+/*imagen*/
+.about__img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.about__img img{
+    width: min(100% - 0%, 700px);
+}
+
+/*titulo y parrafos*/
+.about__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.about__content h2 {
+    width: 100%;
+    font-family: var(--font-title);
+    font-size: clamp(4rem, 0.7273rem + 3.6364vw, 4.5rem);
+    margin-bottom: 3rem;
+}
+
+.about__content span{
+    color: var(--color-yellow);
+}
+
+.about__content p{
+    font-family: var(--font-text);
+    font-size: clamp(1.3rem, -0.0091rem + 1.4545vw, 1.5rem);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/*codigo adaptable para dispositivos mobiles*/
+@media only screen and (max-width:1440px){
+    .about__main{
+        gap: 1.5rem;
+    }
+
+    .about__content h2{
+        font-size: clamp(3rem, 0.5492rem + 3.8369vw, 4rem);
+        margin-bottom: 2rem;
+    }
+
+    .about__content p{
+        font-size: clamp(1.1rem, 0.6098rem + 0.7674vw, 1.3rem);
+    }
+
+}
+
+@media only screen and (max-width:1023px){
+    
+    .about__main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0 6vw;
+    }
+
+    .about__img{
+        padding-bottom: 3rem;
+    }
+
+    .about__content{
+        padding-top: 3rem;
+    }
+
+    .about__content h2{
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .about__main{
+        padding: 0 3vw;
+    }
+
+    .about__content h2{
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .about__content p{
+        font-size: clamp(1.1rem, 0.6098rem + 0.7674vw, 1.3rem);
+    }
+}
+
+@media only screen and (max-width:480px){
+    .about__content p{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}

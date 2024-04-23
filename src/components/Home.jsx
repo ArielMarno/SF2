@@ -11,7 +11,7 @@ const Home = () => {
       </video>
       <video autoPlay loop muted className='home__video_mb'>
             <source src={videomb} type='video/mp4' />
-        </video>
+      </video>
       <div className='home__content'>
         <h1>MARKETING DIGITAL <br /><span>COMPROMETIDO</span> <br />CON SU FUTURO.</h1>
         <p>Contar con una estrategía de marketing digital es esencial para garantizar el progreso y la prosperidad de su negocio.</p>
