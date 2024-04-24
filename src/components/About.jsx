@@ -2,7 +2,9 @@ import React from 'react'
 import '../styles/about.css';
 import brain from '../assets/brain.png';
 
+
 const About = () => {
+
   return (
     <div className='about__main' id='about'>
       <div className='about__img'>
