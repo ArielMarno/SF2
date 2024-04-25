@@ -40,7 +40,7 @@ const Navbar = () => {
       </div>
       <nav className={`links ${click ? 'active' : ''}`}>
         <a href="#about">Nosotros</a>
-        <a href="#porfolio">Portfolio</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#services">Servicios</a>
         <a href="#" target='_blank' rel="noopener noreferrer" className='contact_link'>Contactar</a>
 

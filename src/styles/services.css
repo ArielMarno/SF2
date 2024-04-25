@@ -1,0 +1,36 @@
+.services__main{
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background: var(--color-black);
+    padding: 5rem 8vw;
+}
+
+.services__title{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 3rem 0;
+}
+
+.services__title h2{
+    font-family: var(--font-title);
+    color: var(--color-white);
+    font-size: clamp(4rem, 0.7273rem + 3.6364vw, 4.5rem);
+    font-weight: 700;
+}
+
+.services__title h2 span{
+    color: var(--color-yellow);
+}
+
+.cards__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: center;
+    margin: 3rem 0;
+}

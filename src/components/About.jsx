@@ -1,16 +1,19 @@
 import React from 'react'
 import '../styles/about.css';
 import brain from '../assets/brain.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 
 const About = () => {
 
   return (
     <div className='about__main' id='about'>
-      <div className='about__img'>
+      <div className='about__img' data-aos="fade-up">
         <img src={brain} alt="cerebro?" />
       </div>
-      <div className='about__content'>
+      <div className='about__content' data-aos="fade-up">
         <h2>SOBRE <span>NOSOTROS</span></h2>
         <p>En sunflower nos encargamos de adaptar negocios a las nuevas tecnologias y prepararlos para responder con <span>éxito</span> a los constantes cambios del mercado</p>
         <p>Creamos <span>soluciones</span> de marketing que no solo satisfagan las necesidades actuales de nuestros clientes, sino que también anticipen y se adapten a las <span>tendencias</span> futuras.</p>
