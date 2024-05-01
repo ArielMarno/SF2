@@ -39,18 +39,19 @@ const Navbar = () => {
         <a href="#" className='navbar__logo_mb'><img src={mb} alt="logo flor" /></a>
       </div>
       <nav className={`links ${click ? 'active' : ''}`}>
-        <a href="#about">Nosotros</a>
+        <a href="#" className='inicio_mb'>Inicio</a>
+        <a href="#nosotros">Nosotros</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#services">Servicios</a>
-        <a href="#" target='_blank' rel="noopener noreferrer" className='contact_link'>Contactar</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto" className='contact_link'>Contactar</a>
 
         <div className='navbar__btn'>
-          <button onClick={""}>Empecemos!</button>
+          <a href='#contacto'>Contactarse</a>
         </div> 
       </nav>
 
       <div className="burguer">
-        <Burguer click={click} handleClick={handleClick}/> 
+        <Burguer handleClick={handleClick}/> 
       </div>
     </div>
   )

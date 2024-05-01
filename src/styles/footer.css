@@ -1,0 +1,424 @@
+/*contenedor principal*/
+.footer__main{
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-position: center;
+    background-size: cover;
+    padding: 0 8vw;
+}
+
+/*contenedor de links y formulario*/
+.footer__content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+/*logo sunflower y sección de contacto*/
+.footer__content-data{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
+}
+
+/*datos de contacto*/
+.footer_contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/*titulo contacto*/
+.footer_contact h3{
+  font-family: var(--font-title);
+  font-size: clamp(2rem, -1.2727rem + 3.6364vw, 2.5rem);
+  font-weight: 500;
+  margin: 1rem;
+  border-bottom: 1px solid var(--color-white);
+}
+
+.footer_contact p{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-text);
+  font-size: clamp(1.1rem, 0.4455rem + 0.7273vw, 1.2rem);
+}
+
+a:hover{
+  color: var(--color-yellow);
+}
+
+/*iconos para datos de contacto*/
+.footer_contact p img{
+  width: 25px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+
+/*social links*/
+.footer_contact-socials{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/*botones redes sociales*/
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgb(254, 212, 0, 0.5);
+  background-color: rgb(254, 212, 0, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+/*contenedor formulario*/
+.form__container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*formulario de contacto*/
+form{
+  width: 100%;
+  max-width: 850px;
+  margin-inline: auto;
+  align-items: center;
+  justify-items: center;
+  font-family: var(--font-text);
+  padding: 2.5rem;
+  border: solid var(--color-yellow) 1px;
+  background: var(--color-black);
+}
+
+.form__inputs{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+/*titulo*/
+form h4{
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 0.6909rem + 1.4545vw, 2.2rem);  
+  line-height: 40px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+form h4 span{
+  color: var(--color-yellow);
+  font-size: clamp(2.2rem, 0.2364rem + 2.1818vw, 2.5rem);
+  font-weight: 700;
+}
+
+
+.footer__input_name, .footer__input_email, .footer_input-services{
+  display: flex;
+  flex-direction: column;
+}
+
+/*nombre del input*/
+form label{
+  font-size: clamp(1.1rem, -0.2091rem + 1.4545vw, 1.3rem);
+  font-weight: 500;
+}
+
+/*input*/
+form input{
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  color: var(--color-white);
+  font-size: clamp(1.1rem, -0.2091rem + 1.4545vw, 1.3rem);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-yellow);
+}
+
+/*deplegar menu*/
+.footer_input-services select{
+  font-family: var(--font-text);
+  background: transparent;
+  border: none;
+  font-size: clamp(1.1rem, -0.2091rem + 1.4545vw, 1.3rem);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*menu desplegable*/
+.footer_input-services option{
+  width: 100%;
+  color: var(--color-black);
+  font-weight: 500;
+}
+
+/*boton para enviar el formulario*/
+form button{
+    max-height: 50px;
+    font-family: var(--font-text);
+    font-size: clamp(1.3rem, -0.0091rem + 1.4545vw, 1.5rem);
+    font-weight: 700;
+    color: var(--color-black);
+    background: var(--color-yellow);
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0 var(--color-orange);
+    border: none;
+}
+
+form button:hover {
+  color: var(--color-white);
+  box-shadow: inset 0 -100px 0 0 var(--color-orange);
+}
+
+form button:active {
+  transform: scale(0.9);
+}
+
+/*copyright*/
+.footer__copy{
+  font-family: var(--font-text);
+  margin: 1rem 0 3rem 0;
+}
+
+.footer__copy span{
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+}
+
+
+/*codigo adaptable para dispositivos mobiles*/
+@media only screen and (max-width:1660px){
+  .footer__content-data img{
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width:1440px){
+
+  .footer__content{
+    gap: 5rem;
+  }
+
+  .footer__content-data{
+    width: min(100% - 30%, 850px);
+    margin-inline: auto;
+  }
+
+  .footer__content-data img{
+    width: 320px;
+  }
+
+  /*titulo contacto*/
+  .footer_contact h3{
+    font-size: clamp(1.8rem, 1.3082rem + 0.7692vw, 2rem);
+  }
+
+  .footer_contact p{
+    font-size: clamp(1rem, 0.7541rem + 0.3846vw, 1.1rem);
+  }
+
+  /*formulario*/
+  form h4{
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  form h4 span{
+    font-size: clamp(1.5rem, 0.2734rem + 1.9185vw, 2rem);
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media only screen and (max-width:1023px){
+
+  /*contenedor principal*/
+  .footer__main{
+    padding: 0 6vw;
+  }
+
+  .footer__content-data img{
+    width: 350px;
+  }
+
+  /*contenedor de links y formulario*/
+  .footer__content{
+    margin-top: 5rem;
+    flex-direction: column-reverse;
+  }
+
+  /*logo sunflower y sección de contacto*/
+  .footer__content-data{
+    margin-bottom: 3rem;
+  }
+
+  /*formulario*/
+  form h4, form h4 span{
+    font-size: clamp(1.7rem, 0.7976rem + 1.8824vw, 2rem);
+  }
+
+  .footer__copy{
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width:768px){
+
+  /*contenedor principal*/
+  .footer__main{
+    padding: 0 3vw;
+  }
+
+  .footer__content-data img{
+    width: 300px;
+  }
+
+  /*formulario*/
+  form{
+    padding: 1.5rem;
+  }
+
+  form h4, form h4 span{
+    font-size: 1.5rem;
+    margin: 2.5rem 0;
+  }
+
+  form button{
+    font-size: 1.2rem;
+  }
+
+  form label, form input{
+    font-size: 1rem;
+  }
+
+  .footer__copy{
+    font-size: 0.8rem;
+  }
+
+  .footer__copy span{
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width:480px){
+
+  /*contenedor principal*/
+  .footer__main{
+    padding: 0 1vw;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .footer__content-data img{
+    width: 280px;
+  }
+  
+  form{
+    padding: 1rem;
+  }
+
+  form h4{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+
+  form h4 span{
+    font-size: 1.3rem;
+  }
+
+  .footer__copy{
+    font-size: 0.7rem;
+  }
+
+  .footer__copy span{
+    font-size: 0.8rem;
+  }
+}

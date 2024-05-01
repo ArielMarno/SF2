@@ -1,6 +1,7 @@
+/*contenedor principal*/
 .card_services {
     position: relative;
-    width: 870px;
+    max-width: 870px;
     height: 700px;
     background: #000;
     overflow: hidden;
@@ -8,6 +9,7 @@
     cursor: pointer;
 }
 
+/*imagen de fondo*/
 .poster {
     position: relative;
     top: 0;
@@ -46,12 +48,13 @@
     transform: scale(1.05);
 }
 
+/*contenido de la tarjeta*/
 .details {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     position: absolute;
     bottom: -100%;
     left: 0;
@@ -67,15 +70,17 @@
     bottom: 0;
 }
 
+/*titulo*/
 .details h3 {
     font-family: var(--font-title);
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: clamp(2.4rem, -0.4286rem + 3.1429vw, 3.5rem);
     color: var(--color-white);
 }
 
+/*texto*/
 .details p{
-    font-size: 1.7rem;
+    font-size: clamp(1.4rem, 0.6286rem + 0.8571vw, 1.7rem);
     font-weight: 500;
     color: var(--color-white);
     font-family: var(--font-text);
@@ -83,19 +88,60 @@
     max-width: 600px;
 }
 
-/*NOTEBOOKS*/
-@media only screen and (min-width:1023px) and (max-width:1439px){
+
+/*codigo adaptable para dispositivos mobiles*/
+@media only screen and (max-width:1439px){
     .card_services {
-        max-width: 290px;
-        max-height: 410px;
+        height: 400px;
+    }
+
+    .details img{
+        width: 50px;
+        height: auto;
+    }
+
+    .details h3{
+        font-size: clamp(2rem, 1.0197rem + 1.5348vw, 2.4rem);
+    }
+
+    .details p{
+        font-size: clamp(1.2rem, 0.7098rem + 0.7674vw, 1.4rem);
     }
 }
 
-/*SMARTHPHONES*/
+
+@media only screen and (max-width:1023px){
+
+    .card_services {
+        max-width: 100%;
+        height: 400px;
+    }
+
+    .details h3{
+        font-size: 2.5rem;
+    }
+
+    .details p{
+        font-size: 1.5rem;
+    }
+}
+
+
 @media only screen and (max-width:767px){
 
     .details p{
-        font-size: 1rem;
-        max-width: 95%;
+        font-size: 1.2rem;
+        font-weight: 600;
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .details h3{
+        font-size: 2rem;
+    }
+
+    .details p{
+        font-size: 1.1rem;
     }
 }

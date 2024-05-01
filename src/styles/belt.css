@@ -5,7 +5,7 @@
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
-    background: rgb(254, 251, 65, 0.8);
+    background: var(--color-yellow);
     min-height: 5svh;
 }
 
@@ -20,7 +20,7 @@
     color: var(--color-black);
     letter-spacing: 1px;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 @keyframes belt {
@@ -40,6 +40,6 @@
 }
 
 .belt p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 }

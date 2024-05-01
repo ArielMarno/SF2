@@ -13,7 +13,7 @@
 }
 
 /*hiden*/
-.navbar__logo_mb, .contact_link, .burguer{
+.navbar__logo_mb, .contact_link, .inicio_mb, .burguer{
     display: none;
 }
 
@@ -45,6 +45,10 @@
     position: relative;
 }
 
+.links a:hover{
+    color: var(--color-white);
+}
+
 /*efecto subrayado*/
 .links a::before{
     content: '';
@@ -70,7 +74,7 @@
     align-items: center;
 }
 
-.navbar__btn button{
+.navbar__btn a{
     font-family: var(--font-title);
     font-size: 1.5rem;
     font-weight: 600;
@@ -84,14 +88,17 @@
     border: none;
 }
 
-.navbar__btn button:hover {
+.navbar__btn a:hover {
     color: var(--color-white);
     box-shadow: inset 0 -100px 0 0 var(--color-orange);
 }
   
 
-.navbar__btn  button:active {
+.navbar__btn a:active {
     transform: scale(0.9);
+}
+.navbar__btn a::before{
+    display: none;
 }
 
 /*codigo adaptable para dispositivos mobiles*/
@@ -143,6 +150,7 @@
 
     .navbar__logo_mb img{
         width: 60px;
+        padding: 0.7rem 0;
     }
 
     /*incorporar menu hamburguesa*/
@@ -166,12 +174,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2.5rem;
+        gap: 1.7rem;
     }
 
     .links a{
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 500;
+        text-align: left;
     }
 
     /*efecto subrayado*/
@@ -188,7 +197,7 @@
         transform: translateX(0);
     }
 
-    .contact_link{
+    .contact_link, .inicio_mb{
         display: flex;
     }
 

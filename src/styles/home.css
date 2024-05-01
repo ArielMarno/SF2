@@ -36,7 +36,7 @@ video{
     font-size: clamp(4.8rem, 4.1592rem + 1.0031vw, 5.2rem);
     font-family: var(--font-title);
     font-weight: 600;
-    max-width: 780px;
+    max-width: 900px;
     line-height: 80px;
     margin-bottom: 1.5rem;
     margin-top: 5rem;
@@ -57,7 +57,7 @@ video{
 }
 
 
-.home__content button{
+.home__content a{
     font-family: var(--font-title);
     font-size: 1.8rem;
     font-weight: 500;
@@ -72,13 +72,13 @@ video{
     margin-bottom: 3rem;
 }
 
-.home__content button:hover {
+.home__content a:hover {
     color: var(--color-white);
     box-shadow: inset 0 -100px 0 0 var(--color-orange);
 }
   
 
-.home__content button:active {
+.home__content a:active {
     transform: scale(0.9);
 }
 
@@ -90,7 +90,7 @@ video{
     }
 
     .home__content h1{
-        font-size: clamp(4.4rem, 3.1969rem + 2.5098vw, 4.8rem);
+        font-size: clamp(4rem, 2.7969rem + 2.5098vw, 4.4rem);
     }
 
     .home__content p{
@@ -98,7 +98,7 @@ video{
         max-width: 600px;
     }
 
-    .home__content button{
+    .home__content a{
         font-size: 1.7rem;
     }
 }
@@ -118,8 +118,8 @@ video{
     }
 
     .home__content h1{
-        font-size: clamp(2.7rem, 0.024rem + 8.9199vw, 4.3rem);
-        line-height: 65px;
+        font-size: clamp(2.5rem, 0.1585rem + 7.8049vw, 3.9rem);
+        line-height: 60px;
         margin-bottom: 0.5rem;
     }
 
@@ -130,7 +130,7 @@ video{
         margin-bottom: 0.5rem;
     }
 
-    .home__content button{
+    .home__content a{
         font-size: 1.5rem;
     }
 }
@@ -142,11 +142,12 @@ video{
         line-height: 40px;
     }
     .home__content p{
-        font-size: 0.9rem;
-        font-weight: 500;
+        font-size: 1rem;
+        font-weight: 600;
+        padding-right: 1rem;
     }
 
-    .home__content button{
-        font-size: 1.2rem;
+    .home__content a{
+        font-size: 1.3rem;
     }
 }

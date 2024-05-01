@@ -5,10 +5,10 @@ const Burguer = (props) => {
   return (
     <div>
        <input type="checkbox" id="checkbox" onClick={props.handleClick}/>
-       <label for="checkbox" class="toggle">
-          <div class="bars" id="bar1"></div>
-          <div class="bars" id="bar2"></div>
-          <div class="bars" id="bar3"></div>
+       <label htmlFor="checkbox" className="toggle">
+          <div className="bars" id="bar1"></div>
+          <div className="bars" id="bar2"></div>
+          <div className="bars" id="bar3"></div>
        </label>
     </div>
   )

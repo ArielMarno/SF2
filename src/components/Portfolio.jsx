@@ -54,7 +54,7 @@ const Portfolio = () => {
         <h2>PORTFOLIO</h2>
         <p>Estos son nuestros proyectos más destacados. Cada imagen representa el esfuerzo y la creatividad que dedicamos a nuestros clientes.</p>
         <p>Explora y descubre cómo transformamos ideas en resultados tangibles! →</p>
-        <button>Ver mas</button>
+        <a href='https://www.instagram.com/sunflower_agencia/' target='_blank' rel="noopener noreferrer">Ver más</a>
       </div>
       <div className='gallery-images'data-aos="fade-up">
         <div className='gallery-images_container' ref={scrollRef}>
