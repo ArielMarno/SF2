@@ -35,8 +35,8 @@ const Home = () => {
       <div className='home__content'>
         <h1>MARKETING DIGITAL <br /><span>COMPROMETIDO</span> <br />CON SU CRECIMIENTO.</h1>
         <p>Contar con una estrategía de marketing digital es esencial para garantizar el progreso y la prosperidad de su negocio.</p>
-        <p>Una comprensión profunda de sus objetivos, sus clientes y el panorama competitivo, le aseguran una presencia solida y efectiva en la web.</p>
-        <a href="https://calendly.com/contacto-xv2x/30min" onClick={handleClick}>Asesoria sin cargo</a>
+        <p>Una comprensión profunda de sus objetivos, sus clientes y el panorama competitivo, le aseguran una presencia sólida y efectiva en la web.</p>
+        <a href="https://calendly.com/contacto-xv2x/30min" onClick={handleClick}>Asesoría sin cargo</a>
       </div>
     </div>
   )

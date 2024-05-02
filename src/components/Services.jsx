@@ -29,29 +29,20 @@ const Services = () => {
         <h2>NUESTROS <span>SERVICIOS</span></h2>
       </div>
       <div className='cards__container'>
-        <a href="https://wa.link/5vtds6" target='_blank' rel="noopener noreferrer" data-aos="fade-up">
-          <Card bg={desarrollo} icon={icondesarrollo} title="Desarrollo Web" text="Diseño y desarrollo de sitios corporativos y landing pages. 100% responsive."/>
-        </a>
+       
+          <Card img={desarrollo} icon={icondesarrollo} href="https://wa.link/5vtds6" title="Desarrollo Web" text="Diseño y desarrollo de sitios corporativos y landing pages. 100% responsive." data-aos="fade-up"/>
 
-        <a href="https://wa.link/wmerxs" target='_blank' rel="noopener noreferrer" data-aos="fade-up">
-          <Card bg={publicidad} icon={iconpublicidad}  title="Publicidad Online" text="Aumentá tu visibilidad, atrae clientes y maximiza tus ventas."/>
-        </a>
+          <Card img={publicidad} icon={iconpublicidad} href="https://wa.link/wmerxs"  title="Publicidad Online" text="Aumentá tu visibilidad, atrae clientes y maximizá tus ventas." data-aos="fade-up"/>
 
-        <a href="https://wa.link/20rdx8" target='_blank' rel="noopener noreferrer" data-aos="fade-up">
-          <Card bg={diseño} icon={icondiseño} title="Diseño Gráfico" text="Destaca de la competencia con diseños elegantes y personalizados."/>
-        </a>
 
-        <a href="https://wa.link/0bgxbi" target='_blank' rel="noopener noreferrer" data-aos="fade-up">
-          <Card bg={ecommerce} icon={iconecommerce} title="Tienda Virtual" text="Desarrollo, optimización y estrategias para vender en linea."/>
-        </a>
+          <Card img={diseño} icon={icondiseño} href="https://wa.link/20rdx8" title="Diseño Gráfico" text="Destacá de la competencia con diseños elegantes y personalizados." data-aos="fade-up"/>
+
+          <Card img={ecommerce} icon={iconecommerce} href="https://wa.link/0bgxbi" title="Tienda Virtual" text="Desarrollo, optimización y estrategias para vender en linea." data-aos="fade-up"/>
+
+          <Card img={cm} icon={iconcm} href="https://wa.link/pvzs14" title="Community Manager" text="Creamos contenido relevante y optimizamos tu presencia en linea." data-aos="fade-up"/>
         
-        <a href="https://wa.link/pvzs14" target='_blank' rel="noopener noreferrer" data-aos="fade-up">
-          <Card bg={cm} icon={iconcm} title="Community Manager" text="Creamos contenido relevante y optimizamos tu presencia en linea."/>
-        </a>
 
-        <a href="https://wa.link/chdxmj" target='_blank' rel="noopener noreferrer" data-aos="fade-up">
-          <Card bg={edicion} icon={iconedicion} title="Edición Multimedia" text="Editamos tus videos y fotos para lograr un producto atractivo y profesional."/>
-        </a>
+        <Card img={edicion} icon={iconedicion} href="https://wa.link/chdxmj" title="Edición Multimedia" text="Editamos tus videos y fotos para lograr un producto atractivo y profesional." data-aos="fade-up"/>
       
       </div>
     </div>

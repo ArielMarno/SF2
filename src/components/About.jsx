@@ -15,7 +15,7 @@ const About = () => {
       </div>
       <div className='about__content' data-aos="fade-up">
         <h2>SOBRE <span>NOSOTROS</span></h2>
-        <p>En sunflower nos encargamos de adaptar negocios a las nuevas tecnologias y prepararlos para responder con <span>éxito</span> a los constantes cambios del mercado.</p>
+        <p>En Sunflower nos encargamos de adaptar negocios a las nuevas tecnologías y prepararlos para responder con <span>éxito</span> a los constantes cambios del mercado.</p>
         <p>Creamos <span>soluciones</span> de marketing que no solo satisfagan las necesidades actuales de nuestros clientes, sino que también anticipen y se adapten a las <span>tendencias</span> futuras.</p>
       </div>
     </div>

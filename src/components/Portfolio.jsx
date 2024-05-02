@@ -19,6 +19,8 @@ import gallery07 from '../assets/portfolio/lp2.png';
 import gallery08 from '../assets/portfolio/e0.png';
 import gallery09 from '../assets/portfolio/e1.png';
 import gallery10 from '../assets/portfolio/e2.png';
+import gallery11 from '../assets/portfolio/d5.png';
+import gallery12 from '../assets/portfolio/d6.png';
 
 const images = {
     gallery00,
@@ -31,7 +33,9 @@ const images = {
     gallery07,
     gallery08,
     gallery09,
-    gallery10
+    gallery10,
+    gallery11,
+    gallery12
 };
 
 const Portfolio = () => {
@@ -53,12 +57,12 @@ const Portfolio = () => {
       <div className='portfolio__content' data-aos="fade-up">
         <h2>PORTFOLIO</h2>
         <p>Estos son nuestros proyectos más destacados. Cada imagen representa el esfuerzo y la creatividad que dedicamos a nuestros clientes.</p>
-        <p>Explora y descubre cómo transformamos ideas en resultados tangibles! →</p>
+        <p>Explorá y descubrí cómo transformamos ideas en resultados tangibles! →</p>
         <a href='https://www.instagram.com/sunflower_agencia/' target='_blank' rel="noopener noreferrer">Ver más</a>
       </div>
       <div className='gallery-images'data-aos="fade-up">
         <div className='gallery-images_container' ref={scrollRef}>
-        {[images.gallery00, images.gallery01, images.gallery02, images.gallery03, images.gallery04, images.gallery05, images.gallery06, images.gallery07, images.gallery08, images.gallery09, images.gallery10].map((image, index) => (
+        {[images.gallery00, images.gallery01, images.gallery02, images.gallery03, images.gallery04, images.gallery05, images.gallery06, images.gallery07, images.gallery08, images.gallery09, images.gallery10, images.gallery11, images.gallery12].map((image, index) => (
             <div className="gallery-images_card" key={`gallery_image-${index + 1}`}>
               <img src={image} alt="mockup" />
             </div>
