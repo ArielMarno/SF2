@@ -3,8 +3,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
     min-height: 100svh;
 }
 
@@ -17,12 +15,7 @@ video{
     z-index: -1;
 }
 
-.home__video_mb{
-    display: none;
-}
-
 /*contenido  principal del componente*/
-
 .home__content{
     display: flex;
     flex-direction: column;
@@ -39,7 +32,7 @@ video{
     max-width: 900px;
     line-height: 80px;
     margin-bottom: 1.5rem;
-    margin-top: 5rem;
+    padding-top: 5rem;
 }
 
 .home__content h1 span{
@@ -105,16 +98,18 @@ video{
 
 
 @media only screen and (max-width:768px){
+    
+    .home__container{
+        background-image: url("/fondo_mb.png");
+        background-position: center;
+        background-size: cover;
+    }
     .home__content{
         padding: 0 3vw;
     }
 
     .home__video_destock{
         display: none;
-    }
-
-    .home__video_mb{
-        display: flex;
     }
 
     .home__content h1{

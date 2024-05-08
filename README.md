@@ -1,8 +1,28 @@
-# React + Vite
+<h1 align="center" id="title">SunFlower Agencia Digital</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center"><img src="https://socialify.git.ci/ArielMarno/SF2/image?font=KoHo&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;theme=Dark" alt="project-image"></p>
 
-Currently, two official plugins are available:
+<p id="description">Diseño y desarrollo de Landing Page para agencia de marketing digital.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>🚀 Demo</h2>
+
+[https://sunfloweragencia.com/](https://sunfloweragencia.com/)
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Iconos para galeria</p>
+
+```
+npm i react-icons
+```
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   ReactJS
+*   CSS3
+*   JavaScript
+*   HTML5

@@ -1,9 +1,6 @@
 import {React, useState, useEffect} from 'react';
 import '../styles/navbar.css';
-
 import Burguer from './Burguer';
-
-
 //logos
 import logo from '../assets/logos/logo.png';
 import mb from '../assets/logos/logomb.png';

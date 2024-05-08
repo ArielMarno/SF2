@@ -12,7 +12,7 @@ const Card = ({img, icon, title, text, href}) => {
             <img src={icon} alt={icon} />
             <h3>{title}</h3>
             <p>{text}</p>
-            <a href={href} target='_blank' rel="noopener noreferrer">Más Información</a>
+            <a href={href}>Más Información</a>
           </div>
         </div>
   )

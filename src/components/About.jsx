@@ -1,11 +1,6 @@
 import React from 'react'
 import '../styles/about.css';
 import brain from '../assets/brain.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-AOS.init();
-
-
 const About = () => {
 
   return (

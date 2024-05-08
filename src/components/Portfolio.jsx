@@ -1,11 +1,6 @@
 import React from 'react'
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import '../styles/portfolio.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-AOS.init();
-
-import texture from '../assets/portfolio/textura.jpg';
 
 //importancion de img para galeria
 import gallery00 from '../assets/portfolio/d0.png';
@@ -53,15 +48,15 @@ const Portfolio = () => {
   };
 
   return (
-    <div className='portfolio__main'id='portfolio' style={{ backgroundImage: `url(${texture})` }}>
+    <div className='portfolio__main'id='portfolio'>
       <div className='portfolio__content' data-aos="fade-up">
         <h2>PORTFOLIO</h2>
         <p>Estos son nuestros proyectos más destacados. Cada imagen representa el esfuerzo y la creatividad que dedicamos a nuestros clientes.</p>
         <p>Explorá y descubrí cómo transformamos ideas en resultados tangibles! →</p>
-        <a href='https://www.instagram.com/sunflower_agencia/' target='_blank' rel="noopener noreferrer">Ver más</a>
+        <a href='https://www.instagram.com/sunflower_agencia/'>Ver más</a>
       </div>
       <div className='gallery-images'data-aos="fade-up">
-        <div className='gallery-images_container' ref={scrollRef}>
+        <div className='gallery-images_container'  ref={scrollRef}>
         {[images.gallery00, images.gallery01, images.gallery02, images.gallery03, images.gallery04, images.gallery05, images.gallery06, images.gallery07, images.gallery08, images.gallery09, images.gallery10, images.gallery11, images.gallery12].map((image, index) => (
             <div className="gallery-images_card" key={`gallery_image-${index + 1}`}>
               <img src={image} alt="mockup" />

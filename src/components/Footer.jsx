@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/footer.css';
-
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-AOS.init();
-
-import texture from '../assets/footer_texture.png';
 import logo from '../assets/logos/logo-footer.png';
-
 //iconos para contacto
 import telefono from '../assets/icons/telefono.png';
 import mail from '../assets/icons/mail.png';
@@ -22,7 +15,7 @@ const Footer = () => {
       service: '',
     });
   
-    // Manejar cambios en los campos de entrada
+    // Manejar cambios en los inputs
     const handleInputChange = (e) => {
       const { name, value } = e.target;
       setFormData({ ...formData, [name]: value });
@@ -30,18 +23,18 @@ const Footer = () => {
   
 
   return (
-    <div className='footer__main' style={{ backgroundImage: `url(${texture})` }} id='contacto'>
+    <div className='footer__main' id='contacto'>
       <div className='footer__content'>
         <div className='footer__content-data' data-aos="fade-up">
           <img src={logo} alt="logo SunFlower" />
           <div className='footer_contact'>
             <h3>Contacto</h3>
-            <p><img src={google} alt="G de Google" /><a href="https://maps.app.goo.gl/hif4ea8qQapctCDk6" target='_blank' rel="noopener noreferrer">Buenos Aires, Argentina.</a></p>
+            <p><img src={google} alt="G de Google" /><a href="https://maps.app.goo.gl/hif4ea8qQapctCDk6">Buenos Aires, Argentina.</a></p>
             <p><img src={telefono} alt="telefono" />+54 9 2246 55-8042</p>
             <p><img src={mail} alt="sobre" />contacto@sunfloweragencia.com</p>
           </div>
           <div className='footer_contact-socials'>
-          <a className="Btn" href='https://wa.me/message/TPKQBG3WOOUFP1' target='_blank' rel="noopener noreferrer">
+          <a className="btn" href='https://wa.me/message/TPKQBG3WOOUFP1'>
               <span className="svgContainer">
                 <svg
                   viewBox="0 0 448 512"
@@ -57,7 +50,7 @@ const Footer = () => {
               <span className="BG"></span>
             </a>
 
-            <a className="Btn" href='https://www.instagram.com/sunflower_agencia/' target='_blank' rel="noopener noreferrer">
+            <a className="btn" href='https://www.instagram.com/sunflower_agencia/'>
               <span className="svgContainer">
                 <svg 
                 fill="white" 
@@ -71,7 +64,7 @@ const Footer = () => {
               <span className="BG"></span>
             </a>
 
-            <a className="Btn" href='https://www.facebook.com/sunflower.agencia' target='_blank' rel="noopener noreferrer">
+            <a className="btn" href='https://www.facebook.com/sunflower.agencia'>
               <span className="svgContainer">
                 <svg
                   viewBox="0 0 320 512"
@@ -88,7 +81,7 @@ const Footer = () => {
               <span className="BG"></span>
             </a>  
 
-            <a className="Btn" href='https://www.linkedin.com/company/sunfloweragencia/' target='_blank' rel="noopener noreferrer">
+            <a className="btn" href='https://www.linkedin.com/company/sunfloweragencia/'>
               <span className="svgContainer">
                 <svg
                   viewBox="0 0 448 512"
@@ -120,6 +113,7 @@ const Footer = () => {
                   id="name"
                   name="name"
                   value={formData.name}
+                  autocomplete="off"
                   onChange={handleInputChange}
                   required
                 />
@@ -133,6 +127,7 @@ const Footer = () => {
                   id="email"
                   name="email"
                   value={formData.email}
+                  autocomplete="off"
                   onChange={handleInputChange}
                   required
                 />
@@ -147,7 +142,7 @@ const Footer = () => {
                   onChange={handleInputChange}
                   required
                 >
-                  <option value="">Selecionar servicio</option>
+                  <option value="">Seleccionar servicio</option>
                   <option value="Desarrollo Web">Desarrollo Web</option>
                   <option value="Publicidad Online">Publicidad Online</option>
                   <option value="Diseño Grafico">Diseño Grafico</option>
