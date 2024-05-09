@@ -115,6 +115,7 @@
 /*flechas para desplazar carusel*/
 .gallery-images_arrows{
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;

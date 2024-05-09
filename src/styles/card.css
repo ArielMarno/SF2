@@ -33,6 +33,11 @@
     bottom: 0;
 }
 
+.details img{
+    width: auto;
+    height: auto;
+}
+
 
 /*titulo*/
 .details h3 {

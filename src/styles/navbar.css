@@ -27,6 +27,7 @@
 
 .navbar__logo img{
     width: 180px;
+    height: auto;
 }
 
 /*links navegador*/
@@ -112,6 +113,7 @@
     /*logo sunflower*/
     .navbar__logo img{
         width: 160px;
+        height: auto;
     }
 
     /*links navegador*/
@@ -150,7 +152,8 @@
 
     .navbar__logo_mb img{
         width: 60px;
-        padding: 0.7rem 0;
+        height: auto;
+        padding: 0.7rem 0rem;
     }
 
     /*incorporar menu hamburguesa*/

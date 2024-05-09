@@ -113,7 +113,7 @@ const Footer = () => {
                   id="name"
                   name="name"
                   value={formData.name}
-                  autocomplete="off"
+                  autoComplete="off"
                   onChange={handleInputChange}
                   required
                 />
@@ -127,7 +127,7 @@ const Footer = () => {
                   id="email"
                   name="email"
                   value={formData.email}
-                  autocomplete="off"
+                  autoComplete="off"
                   onChange={handleInputChange}
                   required
                 />

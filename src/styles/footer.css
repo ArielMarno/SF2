@@ -278,6 +278,7 @@ form button:active {
 @media only screen and (max-width:1660px){
   .footer__content-data img{
     width: 400px;
+    height: auto;
   }
 }
 
@@ -294,6 +295,7 @@ form button:active {
 
   .footer__content-data img{
     width: 320px;
+    height: auto;
   }
 
   /*titulo contacto*/
@@ -327,6 +329,7 @@ form button:active {
 
   .footer__content-data img{
     width: 350px;
+    height: auto;
   }
 
   /*contenedor de links y formulario*/
@@ -359,6 +362,7 @@ form button:active {
 
   .footer__content-data img{
     width: 300px;
+    height: auto;
   }
 
   /*formulario*/
@@ -399,6 +403,7 @@ form button:active {
 
   .footer__content-data img{
     width: 280px;
+    height: auto;
   }
   
   form{

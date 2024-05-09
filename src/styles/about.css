@@ -19,6 +19,7 @@
 
 .about__img img{
     width: min(100% - 0%, 700px);
+    height: auto;
 }
 
 /*titulo y parrafos*/
